@@ -6,3 +6,399 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 54ms (Views: 17.1ms | ActiveRecord: 0.0ms | Allocations: 2842)
 
 
+Started GET "/" for ::1 at 2019-06-10 22:30:44 -0300
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.0.rc1) lib/active_record/migration.rb:587:in `check_pending!'
+activerecord (6.0.0.rc1) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+web-console (4.0.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+activesupport (6.0.0.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/static.rb:126:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/rails/actions" for ::1 at 2019-06-10 22:30:51 -0300
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateRooms (20190611012822)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "rooms" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "location" varchar, "description" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190611012822"]]
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-06-11 01:30:51.260709"], ["updated_at", "2019-06-11 01:30:51.260709"]]
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for ::1 at 2019-06-10 22:30:51 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/pedropoiani/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-6.0.0.rc1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/pedropoiani/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-6.0.0.rc1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 9.3ms | Allocations: 202)
+Completed 200 OK in 23ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 979)
+
+
+Started GET "/" for ::1 at 2019-06-10 22:30:55 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/pedropoiani/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-6.0.0.rc1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/pedropoiani/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-6.0.0.rc1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 13.8ms | Allocations: 537)
+Completed 200 OK in 21ms (Views: 15.8ms | ActiveRecord: 0.0ms | Allocations: 1491)
+
+
+Started GET "/" for ::1 at 2019-06-10 22:30:59 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/pedropoiani/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-6.0.0.rc1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/pedropoiani/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-6.0.0.rc1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.5ms | Allocations: 7)
+Completed 200 OK in 7ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 303)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2019-06-10 22:34:32 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/pedropoiani/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-6.0.0.rc1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/pedropoiani/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-6.0.0.rc1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 11.8ms | Allocations: 601)
+Completed 200 OK in 28ms (Views: 15.8ms | ActiveRecord: 0.0ms | Allocations: 2095)
+
+
+Started GET "/" for ::1 at 2019-06-10 22:34:36 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/pedropoiani/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-6.0.0.rc1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/pedropoiani/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-6.0.0.rc1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 10.9ms | Allocations: 192)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.0ms | Allocations: 1705)
+
+
+Started GET "/roms" for ::1 at 2019-06-10 22:34:42 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/roms"):
+  
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+web-console (4.0.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+activesupport (6.0.0.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/static.rb:126:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/roomns" for ::1 at 2019-06-10 22:34:52 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/roomns"):
+  
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+web-console (4.0.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+activesupport (6.0.0.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/static.rb:126:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/rooms" for ::1 at 2019-06-10 22:34:57 -0300
+Processing by RoomsController#index as HTML
+  Rendering rooms/index.html.erb within layouts/application
+  [1m[36mRoom Load (0.4ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  ↳ app/views/rooms/index.html.erb:16
+  Rendered rooms/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 1461)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/pedropoiani/CRUD-Casa-do-Codigo/public/packs
+Completed 200 OK in 7454ms (Views: 7440.5ms | ActiveRecord: 1.0ms | Allocations: 1366353)
+
+
+Started GET "/rooms/new" for ::1 at 2019-06-10 22:35:56 -0300
+Processing by RoomsController#new as HTML
+  Rendering rooms/new.html.erb within layouts/application
+  Rendered rooms/_form.html.erb (Duration: 29.1ms | Allocations: 7512)
+  Rendered rooms/new.html.erb within layouts/application (Duration: 30.4ms | Allocations: 7866)
+Completed 200 OK in 51ms (Views: 40.1ms | ActiveRecord: 0.7ms | Allocations: 17174)
+
+
+Started GET "/" for ::1 at 2019-06-10 23:45:42 -0300
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/pedropoiani/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-6.0.0.rc1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/pedropoiani/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-6.0.0.rc1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 9.5ms | Allocations: 724)
+Completed 200 OK in 23ms (Views: 11.9ms | ActiveRecord: 0.0ms | Allocations: 2358)
+
+
+Started GET "/rooms" for ::1 at 2019-06-10 23:45:51 -0300
+Processing by RoomsController#index as HTML
+  Rendering rooms/index.html.erb within layouts/application
+  [1m[36mRoom Load (0.4ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  ↳ app/views/rooms/index.html.erb:16
+  Rendered rooms/index.html.erb within layouts/application (Duration: 23.1ms | Allocations: 1456)
+Completed 200 OK in 1580ms (Views: 1575.5ms | ActiveRecord: 0.8ms | Allocations: 1345886)
+
+
+Started GET "/rooms/new" for ::1 at 2019-06-10 23:45:57 -0300
+Processing by RoomsController#new as HTML
+  Rendering rooms/new.html.erb within layouts/application
+  Rendered rooms/_form.html.erb (Duration: 10.5ms | Allocations: 2966)
+  Rendered rooms/new.html.erb within layouts/application (Duration: 11.8ms | Allocations: 3326)
+Completed 200 OK in 38ms (Views: 24.3ms | ActiveRecord: 0.7ms | Allocations: 12825)
+
+
+Started GET "/rooms" for ::1 at 2019-06-10 23:45:59 -0300
+Processing by RoomsController#index as HTML
+  Rendering rooms/index.html.erb within layouts/application
+  [1m[36mRoom Load (0.2ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  ↳ app/views/rooms/index.html.erb:16
+  Rendered rooms/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 715)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.2ms | Allocations: 6416)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20190611025416)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "full_name" varchar, "email" varchar, "password" varchar, "location" varchar, "bio" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20190611025416)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "full_name" varchar, "email" varchar, "password" varchar, "location" varchar, "bio" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190611025416"]]
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("full_name", "email", "password", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["full_name", "Admin"], ["email", "admin@admin.com"], ["password", "252481"], ["location", "Itaperuna"], ["created_at", "2019-06-11 03:20:38.275337"], ["updated_at", "2019-06-11 03:20:38.275337"]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
